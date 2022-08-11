@@ -1,0 +1,23 @@
+{
+  "name": "pocketexercisearticles",
+  "version": "1.0.0",
+  "description": "Mozilla Pocket Exercise",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "build": "tsc --build"
+  },
+  "author": "Katerina Chinnappan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "pino": "^8.4.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
