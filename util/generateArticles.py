@@ -22,14 +22,15 @@ for i in r_json:
 	thumbnail_list.append(i['thumbnailUrl'])
 
 i = 0;
-# generate 10 article objects
+# generate 15 article objects
 while len(article_list) <= 14:
 	rand_uuid = str(uuid.uuid4())
-	rand_title = moby[int(random.random()*len(set(moby)))]
+	rand_title_p1 = moby[int(random.random()*len(set(moby)))]
+	rand_title_p2 = moby[int(random.random()*len(set(moby)))]
+	rand_title = rand_title_p1.capitalize() + ' ' + rand_title_p2.capitalize()
 	rand_summary = lorem.sentence()
 	rand_body = lorem.paragraph()
 	if rand_uuid not in article_obj.values() and rand_title not in article_obj.values() and rand_summary not in article_obj.values() and rand_body not in article_obj.values():
-		# article_list.append(rand_uuid)
 		article_obj['articleId'] = rand_uuid
 		article_obj['title'] = rand_title
 		article_obj['summary'] = rand_summary
