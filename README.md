@@ -1,4 +1,4 @@
-# A Vue3 Typescript Web App
+# A Node Typescript REST API
 
 This is a simple web app which consumes the Articles API (please clone and run locally).
 
